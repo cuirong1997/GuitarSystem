@@ -48,12 +48,9 @@ public class SqliteUtil {
         ResultSet rs=null;
         try{
             conn=connect;
-            System.out.println("zzz");
             pst=conn.prepareStatement(sql);
-            System.out.println("yyy");
             if(args!=null&args.length>0){
-            	System.out.println("xxx");
-                for(int i=0;i<args.length;i++){
+            	for(int i=0;i<args.length;i++){
                     pst.setObject(i+1, args[i]);
                 }
             }

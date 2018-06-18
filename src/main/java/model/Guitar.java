@@ -4,17 +4,8 @@ public class Guitar {
 
     int serialNumber;
     String instrumentType;
-    //int count;
     GuitarSpec guitarSpec;
-/*
-    public int getCount() {
-        return count;
-    }
 
-    public void setCount(int count) {
-        this.count = count;
-    }
-*/
     public GuitarSpec getGuitarSpec() {
         return guitarSpec;
     }

@@ -20,7 +20,6 @@ public class GuitarDao {
                 Guitar Guitar =new Guitar();
                 Guitar.setSerialNumber(rs.getInt(1));
                 Guitar.setInstrumentType(rs.getString(2));
-               // Guitar.setCount(rs.getInt(6));
                 GuitarSpec guitarSpec = new GuitarSpec();
                 guitarSpec.setBuilder(rs.getString(3));
                 guitarSpec.setStyle(rs.getString(4));
