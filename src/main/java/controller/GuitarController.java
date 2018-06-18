@@ -23,7 +23,6 @@ public class GuitarController {
 
     @RequestMapping(value="/show")
     public String show(GuitarSpec guitarSpec,Model model){
-        System.out.println("123");
     	System.out.println(guitarSpec);
         List<Guitar> guitarList = guitarService.getGuitars(guitarSpec);
         model.addAttribute("guitarList",guitarList);
