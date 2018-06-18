@@ -24,6 +24,9 @@ public class GuitarDao {
                 guitarSpec.setBuilder(rs.getString(3));
                 guitarSpec.setStyle(rs.getString(4));
                 guitarSpec.setType(rs.getString(5));
+                guitarSpec.setPrice(rs.getInt(8));
+                guitarSpec.setBackWood(rs.getString(6));
+                guitarSpec.setTopWood(rs.getString(7));
                 Guitar.setGuitarSpec(guitarSpec);
                 guitarList.add(Guitar);
             }
