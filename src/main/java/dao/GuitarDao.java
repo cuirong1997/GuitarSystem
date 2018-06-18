@@ -13,7 +13,6 @@ public class GuitarDao {
     public List<Guitar> getAllGuitar(){
     	System.out.println("AAA");
         ResultSet rs=SqliteUtil.executeQuery("SELECT * FROM instrument;", new Object[]{});
-        System.out.println("BBB");
         List<Guitar> guitarList =new ArrayList<Guitar>();
         try{
             while(rs.next()){
